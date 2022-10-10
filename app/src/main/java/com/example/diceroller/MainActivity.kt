@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
     lateinit var diceImage : ImageView
@@ -21,9 +19,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun rollDice(){
-        /** Toast.makeText(this, "button clicked",
-                Toast.LENGTH_SHORT).show()
-        */
         val randomInt = (1..6).random()
 
         val diceImage : ImageView = findViewById(R.id.dice_image)
