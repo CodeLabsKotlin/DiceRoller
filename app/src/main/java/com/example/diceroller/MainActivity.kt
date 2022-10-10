@@ -13,20 +13,29 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Boton de roll listener
+        //Listener boton roll
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice() }
 
         diceImage = findViewById(R.id.dice_image)
         diceImage2 = findViewById(R.id.dice_image2)
+
+        //Listener boton clear
+        val clearButton: Button = findViewById(R.id.clear_button)
+        clearButton.setOnClickListener { clear() }
     }
 
+    /**
+     * Funcion con la que lanzamos los dados
+     */
     private fun rollDice(){
         diceImage.setImageResource(getRandomDiceImage())
         diceImage2.setImageResource(getRandomDiceImage())
-
     }
 
+    /**
+     * Funcion mediante la cual se muestran valores al azar comprendidos entre 1 y 6 en los dados
+     */
     private fun getRandomDiceImage() : Int{
         val randomInt = (1..6).random()
 
@@ -38,5 +47,13 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dice_5
             else -> R.drawable.dice_6
         }
+    }
+
+    /**
+     * Funcion con la que reseteamos los dados
+     */
+    private fun clear(){
+        diceImage.setImageResource(0)
+        diceImage2.setImageResource(0)
     }
 }

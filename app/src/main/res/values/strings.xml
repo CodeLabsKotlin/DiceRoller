@@ -3,4 +3,5 @@
     <string name="roll_label">Roll</string>
     <string name="countUp_label">Count up</string>
     <string name="reset_label">reset</string>
+    <string name="clear_label">clear</string>
 </resources>
