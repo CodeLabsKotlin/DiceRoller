@@ -1,4 +1,4 @@
-# DiceRoller :game_die:
+# 1.2 DiceRoller :game_die:
 
 ## Descripcion 
 Repositorio en el que encontraremos un pequeño proyecto el cual nos permitirá lanzar dos dados en la pantalla, y se nos muestrará caras del mismo de forma aleatoria
